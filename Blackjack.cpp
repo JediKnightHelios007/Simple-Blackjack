@@ -1,6 +1,10 @@
 #include <iostream>
 #include <time.h>
 
+/*Modified code from Dion Moult's C++ BlackJack game.
+*Website: http://thinkmoult.com/a-little-21-fun-with-c/
+*
+*/
 
 /*
 * Generate random number that represents a card (1-13)
@@ -26,12 +30,12 @@ int main()
 	// This creates a random seed for rand() based on the time.
 	//using namespace std;
 	srand(time(NULL));
-	//help
+	
 	bool play;
 	int ai_card, my_card;
 	char x;
 
-	std::cout << "Welcome to a very simple BlackJack game to kill time.\n";
+	std::cout << "Welcome to a very simple BlackJack game.\n";
 
 	play = true;
 
@@ -89,7 +93,7 @@ int main()
 			std::cout << "Please either type \"h\" to hit or \"s\" to stay: ";
 		}
 	} while (play == true);
-	// Some credits and stuff.
-	std::cout << "Thank you for playing Dion Moult's C++ BlackJack game.\n";
+	
+	
 	return 0;
 }
